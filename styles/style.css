@@ -85,14 +85,17 @@ ol {
 .search-form__textfield {
   background-color: transparent;
   color: #fff;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px;
+  border-bottom: 1px;
   border-left: 0;
   border-right: 0;
+  border-color: #fff;
+  border-style: solid;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   width: 255px;
   margin-top: 8px;
+  padding: 2.5px 14px 2.5px 0;
 }
 
 .result__video-container {
@@ -132,7 +135,6 @@ ol {
   overflow-x: hidden;
 }
 
-
 /* TODO: Спорное решение, в Лисе не работает */
 .content__list::-webkit-scrollbar {
   width: 0;
@@ -141,6 +143,10 @@ ol {
 .content__video-card {
   display: grid;
   grid-template-columns: 1fr 194px;
+}
+
+.content__list-item {
+
 }
 
 .content__list-item:has(.content__card-link_current) {
